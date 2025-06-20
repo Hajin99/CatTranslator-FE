@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1001,
+        "name": "Happy",
+         "description": "Seoul, the bustling capital of South Korea, seamlessly blends ancient traditions with modern innovation. With a population exceeding 10 million, it's a dynamic metropolis known for its vibrant culture, cutting-edge technology, and delectable cuisine. From historic palaces to futuristic skyscrapers, Seoul offers a captivating mix of old and new, making it a must-visit destination for travelers seeking a unique and immersive experience.",
+        "imageName": "만족한다옹"
+    },
+    {
+        "id": 1002,
+        "name": "Angry",
+         "description": "Athens, the historic capital of Greece, is a city steeped in ancient mythology and modern charm. Home to iconic landmarks like the Acropolis, Parthenon, and Temple of Olympian Zeus, it's a treasure trove of archaeological wonders. Amidst its rich history, Athens pulsates with energy, boasting lively neighborhoods, bustling markets, and a thriving culinary scene. With its blend of antiquity and contemporary flair, Athens offers visitors an unforgettable journey through time and culture in the heart of the Mediterranean.",
+        "imageName": "화났다옹"
+    },
+    {
+        "id": 1003,
+        "name": "Hungry",
+        "description": "Bangkok, the vibrant capital of Thailand, is a city of contrasts where traditional Thai culture meets modernity. Known for its bustling street life, ornate temples like Wat Arun and Wat Pho, and bustling markets like Chatuchak Weekend Market, Bangkok is a sensory delight. From its world-renowned street food to its luxurious shopping malls, the city offers a diverse range of experiences. With its intricate canal system, towering skyscrapers, and vibrant nightlife, Bangkok is a dynamic city that never fails to captivate visitors from around the globe.",
+        "imageName": "음식달라옹"
+    }
+]
