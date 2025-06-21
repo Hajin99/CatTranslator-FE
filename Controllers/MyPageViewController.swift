@@ -100,12 +100,12 @@ class MyPageViewController: UIViewController {
 //        let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
 //        sceneDelegate.window?.rootViewController = loginVC
 //        sceneDelegate.window?.makeKeyAndVisible()
-        // 2. 루트 뷰 컨트롤러를 HomeViewController로 이동하는 버전
+        // 2. 루트 뷰 컨트롤러를 LogoViewController로 이동하는 버전
         guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
                 let sceneDelegate = windowScene.delegate as? SceneDelegate else { return }
 
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let homeVC = storyboard.instantiateViewController(withIdentifier: "HomeViewController")
+        let homeVC = storyboard.instantiateViewController(withIdentifier: "LogoViewController")
         // navigationcontroller로 감싸줘야 함수 쓸 수 있다.
         let nav = UINavigationController(rootViewController: homeVC)
 

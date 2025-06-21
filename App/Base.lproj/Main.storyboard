@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="73b-pR-cwn" kind="relationship" relationship="rootViewController" id="3Lq-3X-TkN"/>
+                        <segue destination="73b-pR-cwn" kind="relationship" relationship="rootViewController" id="WCn-Dv-7XS"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V90-Gm-RY1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -129,16 +129,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="130" translatesAutoresizingMaskIntoConstraints="NO" id="qeg-zP-QAG">
-                                <rect key="frame" x="29.999999999999986" y="200.66666666666666" width="231.66666666666663" height="22.333333333333343"/>
+                                <rect key="frame" x="30.000000000000014" y="200.66666666666666" width="212.33333333333337" height="24.333333333333343"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="‣ email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQO-6h-oC2">
-                                        <rect key="frame" x="0.0" y="0.0" width="57.333333333333336" height="22.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="46.333333333333336" height="24.333333333333332"/>
                                         <fontDescription key="fontDescription" name="Goyang" family="Goyang" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1E-cO-mp2">
-                                        <rect key="frame" x="187.33333333333334" y="0.0" width="44.333333333333343" height="22.333333333333332"/>
+                                        <rect key="frame" x="176.33333333333334" y="0.0" width="36" height="24.333333333333332"/>
                                         <fontDescription key="fontDescription" name="Goyang" family="Goyang" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -146,16 +146,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="101" translatesAutoresizingMaskIntoConstraints="NO" id="9o6-GG-HDA">
-                                <rect key="frame" x="29.999999999999986" y="233" width="239.66666666666663" height="22.333333333333343"/>
+                                <rect key="frame" x="30" y="235" width="212" height="24.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="‣ nickname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uzj-5c-uYN">
-                                        <rect key="frame" x="0.0" y="0.0" width="94.333333333333329" height="22.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="24.333333333333332"/>
                                         <fontDescription key="fontDescription" name="Goyang" family="Goyang" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3Z-mc-2jT">
-                                        <rect key="frame" x="195.33333333333334" y="0.0" width="44.333333333333343" height="22.333333333333332"/>
+                                        <rect key="frame" x="176" y="0.0" width="36" height="24.333333333333332"/>
                                         <fontDescription key="fontDescription" name="Goyang" family="Goyang" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -249,10 +249,10 @@
             </objects>
             <point key="canvasLocation" x="195" y="963"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="SQM-aS-ChY">
             <objects>
-                <viewController id="gIa-th-D2j" customClass="MainViewController" customModule="CatTranslator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gIa-th-D2j" customClass="HomeViewController" customModule="CatTranslator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oD7-BS-qUd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -539,10 +539,10 @@
             </objects>
             <point key="canvasLocation" x="1848" y="656"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Logo View Controller-->
         <scene sceneID="Tyv-vr-xPF">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="73b-pR-cwn" customClass="HomeViewController" customModule="CatTranslator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogoViewController" id="73b-pR-cwn" customClass="LogoViewController" customModule="CatTranslator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rBt-YK-zSC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
