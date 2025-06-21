@@ -368,20 +368,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wYL-SW-IFc">
-                                <rect key="frame" x="76" y="129" width="240" height="128"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" 조금만 기다려 달라옹🐱" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbS-Mo-dyA">
+                                <rect key="frame" x="20" y="245" width="345" height="512"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <color key="backgroundColor" red="0.68235294120000001" green="0.82745098039999998" blue="0.93725490199999995" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Goyang" family="Goyang" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKV-2q-gjB">
-                                <rect key="frame" x="125" y="286" width="143" height="35"/>
+                                <rect key="frame" x="77" y="202" width="240" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start Recording"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start Translating"/>
                                 <connections>
                                     <action selector="recordButtonTapped:" destination="1fM-is-X3c" eventType="touchUpInside" id="NjS-Rl-6f3"/>
                                     <action selector="recordButtonTapped:" destination="SJI-VS-UrC" eventType="touchUpInside" id="RhD-fc-Q46"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wYL-SW-IFc">
+                                <rect key="frame" x="76" y="80" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Zq3-ZM-e0c"/>
                         <color key="backgroundColor" red="0.79246652126312256" green="0.96277540922164917" blue="0.92000442743301392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -390,12 +398,13 @@
                     <navigationItem key="navigationItem" id="d5f-mY-DJb"/>
                     <connections>
                         <outlet property="imageView" destination="wYL-SW-IFc" id="eA9-sx-EDb"/>
+                        <outlet property="label" destination="YbS-Mo-dyA" id="4PG-SD-2GX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bzB-Az-Wyp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="SJI-VS-UrC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1097" y="1383"/>
+            <point key="canvasLocation" x="1096.9465648854962" y="1382.3943661971832"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="cbD-gD-vcA">

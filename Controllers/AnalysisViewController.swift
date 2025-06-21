@@ -11,7 +11,8 @@ import AVFoundation
 class AnalysisViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
-
+    @IBOutlet weak var label: UILabel!
+    
     var audioRecorder: AVAudioRecorder?
     var isRecording = false
     
@@ -40,7 +41,7 @@ class AnalysisViewController: UIViewController {
         if isRecording {
                 audioRecorder?.stop()
                 isRecording = false
-                sender.setTitle("Start Recording", for: .normal)
+                sender.setTitle("Start Translating", for: .normal)
                 print("녹음 종료")
                 
                 let wavURL = getDocumentsDirectory().appendingPathComponent("recording.wav")
@@ -143,9 +144,14 @@ class AnalysisViewController: UIViewController {
         request.httpMethod = "POST"
         request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
         
+        var request2 = URLRequest(url: URL(string: "http://192.168.219.102:8080/api/audio/emotion")!)
+        request2.httpMethod = "POST"
+        request2.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
+        
         // 인증된 사용자만 기능 사용 가능
         if let token = TokenManager.getToken() {
             request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+            request2.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         } else {
             print("토큰이 없음")
             return
@@ -166,6 +172,7 @@ class AnalysisViewController: UIViewController {
         
         body.append("--\(boundary)--\r\n".data(using: .utf8)!)
         request.httpBody = body
+        request2.httpBody = body
 
         // 전송
         URLSession.shared.dataTask(with: request) { data, response, error in
@@ -179,6 +186,35 @@ class AnalysisViewController: UIViewController {
                 }
             } else {
                 print("이미지로 변환 실패")
+            }
+        }.resume()
+        
+        // 전송
+        URLSession.shared.dataTask(with: request2) { data, response, error in
+            if let error = error {
+                print("전송 실패: \(error)")
+                return
+            }
+
+            if let data = data {
+                do {
+                    if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
+                       let choices = json["choices"] as? [[String: Any]],
+                       let message = choices.first?["message"] as? [String: Any],
+                       let content = message["content"] as? String {
+                        
+                        DispatchQueue.main.async {
+                            print("GPT 응답 content만: \(content)")
+                            self.label.text = content
+                        }
+                    } else {
+                        print("JSON 구조 파싱 실패")
+                    }
+                } catch {
+                    print("JSON 디코딩 에러: \(error)")
+                }
+            } else {
+                print("데이터 없음")
             }
         }.resume()
         
