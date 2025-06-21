@@ -40,7 +40,7 @@ class MyPageViewController: UIViewController {
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         
-        // 저장된 토큰 불러오기 (UserDefaults에 저장)
+        // 저장된 토큰 불러오기 (UserDefaults에 저장x -> TokenManager라는 클래스를 하나 만들어서 저장)
         if let token = TokenManager.getToken() {
             request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         } else {
@@ -67,7 +67,8 @@ class MyPageViewController: UIViewController {
                                 let nickname = result["nickname"] as? String ?? "닉네임 없음"
                                 let email = result["email"] as? String ?? "이메일 없음"
 
-                                let joinDate = result["createdAt"] as? String ?? "가입 날짜 없음"
+                                let joinDate = result["joinedAt"] as? String ?? "가입 날짜 없음"
+                                print(json)
                                 let formattedDate = joinDate.components(separatedBy: "T").first ?? "날짜 없음"
                                 // UI 업데이트는 메인 쓰레드에서
                                 DispatchQueue.main.async {

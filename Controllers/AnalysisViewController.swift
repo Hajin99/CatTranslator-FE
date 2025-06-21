@@ -45,15 +45,15 @@ class AnalysisViewController: UIViewController {
                 
                 let wavURL = getDocumentsDirectory().appendingPathComponent("recording.wav")
                 
-//                // 재생 테스트
-//                do {
-//                    let player = try AVAudioPlayer(contentsOf: wavURL)
-//                    player.prepareToPlay()
-//                    player.play()
-//                    print("WAV 파일 재생 성공")
-//                } catch {
-//                    print("WAV 재생 실패: \(error.localizedDescription)")
-//                }
+                // 재생 테스트
+                do {
+                    let player = try AVAudioPlayer(contentsOf: wavURL)
+                    player.prepareToPlay()
+                    player.play()
+                    print("WAV 파일 재생 성공")
+                } catch {
+                    print("WAV 재생 실패: \(error.localizedDescription)")
+                }
 
                 // WAV 전송
                 self.uploadWavFile(fileURL: wavURL)
@@ -139,9 +139,17 @@ class AnalysisViewController: UIViewController {
 
     func uploadWavFile(fileURL: URL) {
         let boundary = "Boundary-\(UUID().uuidString)"
-        var request = URLRequest(url: URL(string: "http://localhost:8080/api/audio")!)
+        var request = URLRequest(url: URL(string: "http://192.168.219.102:8080/api/audio")!)
         request.httpMethod = "POST"
         request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
+        
+        // 인증된 사용자만 기능 사용 가능
+        if let token = TokenManager.getToken() {
+            request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        } else {
+            print("토큰이 없음")
+            return
+        }
         
         var body = Data()
 
