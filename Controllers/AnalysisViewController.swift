@@ -138,6 +138,22 @@ class AnalysisViewController: UIViewController {
         }
     }
 
+    // 타이핑 애니메이션
+    func typeText(_ text: String, label: UILabel, interval: TimeInterval = 0.05) {
+        label.text = ""
+        var index = 0
+        Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { timer in
+            if index < text.count {
+                let i = text.index(text.startIndex, offsetBy: index)
+                label.text?.append(text[i])
+                index += 1
+            } else {
+                timer.invalidate()
+            }
+        }
+    }
+
+    
     func uploadWavFile(fileURL: URL) {
         let boundary = "Boundary-\(UUID().uuidString)"
         var request = URLRequest(url: URL(string: "http://192.168.219.102:8080/api/audio")!)
@@ -205,7 +221,10 @@ class AnalysisViewController: UIViewController {
                         
                         DispatchQueue.main.async {
                             print("GPT 응답 content만: \(content)")
-                            self.label.text = content
+                            self.label.alpha = 1.0 // 타이핑 중에 보이게 유지
+
+                            // 타이핑 효과 적용
+                            self.typeText(content, label: self.label)
                         }
                     } else {
                         print("JSON 구조 파싱 실패")
