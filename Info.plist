@@ -4,10 +4,12 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Park.ttf</string>
 		<string>Goyang.ttf</string>
 	</array>
 	<key>CFBundleURLTypes</key>
 	<array>
+		<dict/>
 		<dict/>
 	</array>
 	<key>UIApplicationSceneManifest</key>

@@ -11,7 +11,7 @@ import AVFoundation
 class AnalysisViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var label: UITextView!
     
     var audioRecorder: AVAudioRecorder?
     var isRecording = false
@@ -139,7 +139,7 @@ class AnalysisViewController: UIViewController {
     }
 
     // 타이핑 애니메이션
-    func typeText(_ text: String, label: UILabel, interval: TimeInterval = 0.05) {
+    func typeText(_ text: String, label: UITextView, interval: TimeInterval = 0.05) {
         label.text = ""
         var index = 0
         Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { timer in
@@ -221,8 +221,9 @@ class AnalysisViewController: UIViewController {
                         
                         DispatchQueue.main.async {
                             print("GPT 응답 content만: \(content)")
+                            self.label.font = UIFont(name: "Goyang", size: 18)
                             self.label.alpha = 1.0 // 타이핑 중에 보이게 유지
-
+                            
                             // 타이핑 효과 적용
                             self.typeText(content, label: self.label)
                         }
