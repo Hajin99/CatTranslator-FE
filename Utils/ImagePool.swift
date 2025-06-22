@@ -2,7 +2,7 @@
 //  CachedImage.swift
 //  MasterDetailBasic
 //
-//  Created by jmleehs on 5/5/24.
+//  Created by 김하진 on 6/20/25.
 //
 
 import Foundation

@@ -2,7 +2,7 @@
 //  Image.swift
 //  MyMasterDetail
 //
-//  Created by jmleehs on 5/4/24.
+//  Created by 김하진 on 6/20/25.
 //
 
 import UIKit
