@@ -2,19 +2,19 @@
     {
         "id": 1001,
         "name": "Happy",
-         "description": "Seoul, the bustling capital of South Korea, seamlessly blends ancient traditions with modern innovation. With a population exceeding 10 million, it's a dynamic metropolis known for its vibrant culture, cutting-edge technology, and delectable cuisine. From historic palaces to futuristic skyscrapers, Seoul offers a captivating mix of old and new, making it a must-visit destination for travelers seeking a unique and immersive experience.",
+         "description": "이 그래프는 안정적이고 만족스러운 상태를 나타냅니다. 낮은 주파수에서 시작해 점점 부드럽게 상승하는 울음 패턴은 편안함을 나타냅니다. 고양이가 행복해하면 털을 다듬고, 잠을 자고, 차분하게 누워 있거나, 놀고 있을 가능성이 높습니다. 고양이를 쓰다듬어 보면 근육이 이완되고 만지면 부드러워지는 것을 느낄 수 있습니다. 고양이가 행복하다는 또 다른 신호는 바로 가르랑거리는 소리입니다.",
         "imageName": "만족한다옹"
     },
     {
         "id": 1002,
         "name": "Angry",
-         "description": "Athens, the historic capital of Greece, is a city steeped in ancient mythology and modern charm. Home to iconic landmarks like the Acropolis, Parthenon, and Temple of Olympian Zeus, it's a treasure trove of archaeological wonders. Amidst its rich history, Athens pulsates with energy, boasting lively neighborhoods, bustling markets, and a thriving culinary scene. With its blend of antiquity and contemporary flair, Athens offers visitors an unforgettable journey through time and culture in the heart of the Mediterranean.",
+         "description": "이 그래프는 불쾌하거나 불편한 상황을 나타냅니다. 높은 피치와 급격한 파형 변화는 스트레스나 공격성을 나타냅니다. 갑작스런 환경 변화나 싫어하는 소리, 사람의 과한 접근이 원인일 수 있어요. 조용한 공간을 제공해 주세요. 고양이는 스토킹, 찰싹 때리기, 물기, 덮치기 등을 통해 지배력을 과시하고 싶어 할 수 있습니다. 놀이 싸움과 실제 싸움의 차이는 의도이며, 이는 때때로 행동의 강도로 드러납니다. 고양이는 스스로를 보호하기 위해 할퀴고 물기 도 합니다. 이러한 공격은 쉿쉿거리거나 으르렁거리는 형태로 접근하지 말라는 경고로 시작될 수 있습니다.",
         "imageName": "화났다옹"
     },
     {
         "id": 1003,
         "name": "Hungry",
-        "description": "Bangkok, the vibrant capital of Thailand, is a city of contrasts where traditional Thai culture meets modernity. Known for its bustling street life, ornate temples like Wat Arun and Wat Pho, and bustling markets like Chatuchak Weekend Market, Bangkok is a sensory delight. From its world-renowned street food to its luxurious shopping malls, the city offers a diverse range of experiences. With its intricate canal system, towering skyscrapers, and vibrant nightlife, Bangkok is a dynamic city that never fails to captivate visitors from around the globe.",
+        "description": "고양이의 울음은 일정한 주기와 높낮이를 가지며 반복되고 있습니다. 이는 주로 관심을 끌기 위한 의사 표현으로, 특히 배고플 때 자주 나타납니다.",
         "imageName": "음식달라옹"
     }
 ]

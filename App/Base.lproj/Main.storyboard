@@ -382,7 +382,7 @@
                                 <rect key="frame" x="76" y="80" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="🐱💬" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cXV-ex-0Y5">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="🐱💬 조금만 기다려 달라옹" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cXV-ex-0Y5">
                                 <rect key="frame" x="43" y="254" width="313" height="475"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.68235294117647061" green="0.82745098039215681" blue="0.93725490196078431" alpha="0.50416494205298013" colorSpace="custom" customColorSpace="sRGB"/>
@@ -405,31 +405,6 @@
                 <exit id="SJI-VS-UrC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1096.9465648854962" y="1382.3943661971832"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="fP5-Yr-lI4">
-            <objects>
-                <viewController id="uC4-Ox-tkM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="B1e-1P-IY8">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" 조금만 기다려 달라옹🐱" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbS-Mo-dyA">
-                                <rect key="frame" x="24" y="159" width="345" height="512"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.68235294120000001" green="0.82745098039999998" blue="0.93725490199999995" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Goyang" family="Goyang" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="7ET-4n-1ld"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Sjn-ib-bnU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1818" y="1466"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="cbD-gD-vcA">
@@ -539,10 +514,10 @@
                                 <rect key="frame" x="10" y="10" width="373" height="822"/>
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xlb-vG-0M9">
-                                        <rect key="frame" x="0.0" y="0.0" width="373" height="541.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="487.33333333333331"/>
                                     </pickerView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMc-nY-6L0">
-                                        <rect key="frame" x="0.0" y="551.33333333333337" width="373" height="270.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="497.33333333333326" width="373" height="324.66666666666674"/>
                                         <color key="backgroundColor" red="0.85846532534246578" green="0.92588806069589036" blue="0.96442668464109582" alpha="0.91783854170000001" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -550,7 +525,7 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Xlb-vG-0M9" firstAttribute="height" secondItem="pMc-nY-6L0" secondAttribute="height" multiplier="2" id="p4T-6e-ZQ4"/>
+                                    <constraint firstItem="Xlb-vG-0M9" firstAttribute="height" secondItem="pMc-nY-6L0" secondAttribute="height" multiplier="1.5" id="p4T-6e-ZQ4"/>
                                 </constraints>
                             </stackView>
                         </subviews>

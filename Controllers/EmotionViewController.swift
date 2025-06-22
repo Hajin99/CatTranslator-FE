@@ -21,6 +21,7 @@ class EmotionViewController: UIViewController {
     override func viewDidLoad(){
         super.viewDidLoad()
         
+        tmiLabel.font = UIFont(name: "Goyang", size: 18)
         tmiLabel.layer.cornerRadius = 10
         tmiLabel.clipsToBounds = true
         
